@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--bg:#0b0b0b;--panel:#151515;--text:#f7f5ef;--muted:#999;--gold:#f2a83b;--green:#25d366;--line:#292929}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}
+.nav{height:78px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:9;background:#0b0b0bed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.logo{font-size:29px;font-weight:700;letter-spacing:2px}.logo span{color:var(--gold)}nav{display:flex;gap:28px}nav a{color:#bbb;font-size:14px}nav a:hover{color:var(--gold)}.navbtn{background:var(--gold);color:#111;padding:11px 20px;border-radius:30px;font-weight:700;font-size:14px}
+.hero{min-height:calc(100vh - 78px);padding:75px 7%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.hero small,.heading small,.offer small,.about small,.contact small{color:var(--gold);font-weight:700;letter-spacing:3px}.hero h1{font:700 clamp(52px,6.5vw,88px)/1.02 'Playfair Display',serif;margin:17px 0 25px;letter-spacing:-2px}.hero h1 i{color:#ffc66d;font-style:normal}.hero p{color:var(--muted);font-size:18px;max-width:590px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin:32px 0}.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 22px;border-radius:30px;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px)}.gold{background:var(--gold);color:#111}.outline{border:1px solid #444}.wa{background:var(--green);color:#fff}.trust{color:#8d8981;font-size:13px}.heroimg{position:relative}.heroimg>img{width:100%;height:610px;object-fit:cover;border-radius:28px}.card{position:absolute;bottom:25px;left:-25px;background:#fff;color:#111;border-radius:16px;padding:15px 18px;display:grid;gap:2px;box-shadow:0 15px 50px #0008}.card b{font-size:10px;color:#a86500;letter-spacing:1px}.card strong{font-size:16px}.card span{font-weight:700;color:#a86500;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);padding:24px 7%;background:#111;border-block:1px solid var(--line)}.stats div{text-align:center;border-right:1px solid var(--line)}.stats div:last-child{border:0}.stats b{display:block;font-size:21px}.stats span{font-size:12px;color:#888}
+.section{padding:105px 7%}.heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.heading h2,.about h2,.contact h2{font:700 50px/1.05 'Playfair Display',serif;margin-top:8px}.heading>p{color:#85817a;max-width:430px;text-align:right}.cats{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}.cats button{border:1px solid #2b2b2b;background:#151515;color:#aaa;padding:9px 17px;border-radius:25px;cursor:pointer}.cats button.active,.cats button:hover{background:var(--gold);color:#111;border-color:var(--gold);font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.food{background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden}.food img{width:100%;height:230px;object-fit:cover}.food>div{padding:19px}.food h3{font-size:18px}.food h3 b{float:right;color:var(--gold);font-size:15px}.food p{color:#888;font-size:13px;min-height:45px;margin:9px 0 16px}.order{width:100%;padding:11px;border:0;border-radius:9px;background:#242424;color:#fff;font-weight:700;cursor:pointer}.order:hover{background:var(--gold);color:#111}
+.offer{margin:0 7% 105px;padding:55px 60px;border:1px solid #49351d;border-radius:25px;background:#17120c;display:flex;justify-content:space-between;align-items:center;gap:30px}.offer h2{font:700 42px 'Playfair Display';margin:7px 0}.offer p{color:#999;max-width:650px}.about{padding:105px 7%;background:#111;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about img{width:100%;height:520px;object-fit:cover;border-radius:25px}.about h2{margin:10px 0 20px}.about p{color:#999;max-width:560px}.about ul{list-style:none;display:grid;gap:10px;margin-top:22px;color:#ccc;font-size:14px}.contact{text-align:center;padding:105px 7%}.contact h2{margin:10px 0}.contact>p{color:#888;margin-bottom:27px}.details{color:#777;font-size:13px;margin-top:28px}.float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:27px;z-index:20;box-shadow:0 10px 30px #0008}footer{text-align:center;border-top:1px solid var(--line);padding:45px 7%;color:#777}footer p{font-size:13px;margin:7px 0}footer small{font-size:11px}
+@media(max-width:1000px){.hero,.about{grid-template-columns:1fr}.heroimg>img{height:500px}.grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr);gap:20px}.stats div{border:0}.heading{align-items:start;flex-direction:column}.heading>p{text-align:left}.offer{align-items:flex-start;flex-direction:column}}
+@media(max-width:650px){.nav{padding:0 5%;height:70px}.nav nav{display:none}.hero{padding:55px 5%}.hero h1{font-size:54px}.heroimg>img{height:390px}.card{left:15px}.section{padding:75px 5%}.heading h2,.about h2,.contact h2{font-size:40px}.grid{grid-template-columns:1fr}.stats{padding:20px 5%}.offer{margin:0 5% 75px;padding:35px 25px}.offer h2{font-size:34px}.about{padding:75px 5%}.about img{height:350px}.contact{padding:75px 5%}}
+
+/* ===== Photo animations (hero + menu food photos) ===== */
+
+/* ---------- HERO VIDEO (pizza.mp4) ---------- */
+.heroimg>video{
+  width:100%;height:610px;object-fit:cover;border-radius:28px;display:block;
+  transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .8s ease,box-shadow .8s ease;
+  animation:heroDrop 3s cubic-bezier(.22,.8,.3,1) backwards,heroFloat 7s ease-in-out 3s infinite;
+}
+.heroimg:hover>video{transform:scale(1.03) rotate(.6deg);filter:saturate(1.2) brightness(1.06);box-shadow:0 30px 80px #f2a83b33}
+.heroimg .card{z-index:2;animation:cardPop .9s cubic-bezier(.2,1.4,.4,1) 2.4s backwards,cardFloat 5s ease-in-out 3.4s infinite}
+@media(max-width:1000px){.heroimg>video{height:500px}}
+@media(max-width:650px){.heroimg>video{height:390px}}
+
+/* Video slowly drops from the top, settles with a soft bounce, then floats gently */
+@keyframes heroDrop{
+  0%{translate:0 -130%;opacity:0}
+  15%{opacity:1}
+  80%{translate:0 2%}
+  92%{translate:0 -1%}
+  100%{translate:0 0}
+}
+@keyframes heroFloat{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@keyframes cardPop{from{opacity:0;translate:-30px 30px;scale:.6}to{opacity:1;translate:0 0;scale:1}}
+@keyframes cardFloat{0%,100%{translate:0 0}50%{translate:0 8px}}
+
+/* ---------- MENU FOOD PHOTOS ---------- */
+.food img{
+  transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .7s ease;
+  animation:foodReveal 1s cubic-bezier(.77,0,.18,1) backwards;
+}
+.food:nth-child(3n+1) img{animation-delay:.05s}
+.food:nth-child(3n+2) img{animation-delay:.2s}
+.food:nth-child(3n+3) img{animation-delay:.35s}
+.food:hover img{transform:scale(1.12) rotate(-1.5deg);filter:saturate(1.25) brightness(1.08) contrast(1.05)}
+
+@keyframes foodReveal{
+  from{clip-path:inset(100% 0 0 0);opacity:0;scale:1.3}
+  to{clip-path:inset(0 0 0 0);opacity:1;scale:1}
+}
+
+/* Modern browsers: play the reveal when the card scrolls into view */
+@supports (animation-timeline:view()){
+  .food img{
+    animation:foodReveal linear both;
+    animation-timeline:view();
+    animation-range:entry 0% entry 70%;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media(prefers-reduced-motion:reduce){
+  .heroimg>video,.heroimg .card,.food img{animation:none!important;transition:none}
+  .heroimg:hover>video,.food:hover img{transform:none;filter:none;box-shadow:none}
+}
+
+/* Dark placeholder while the hero video loads (no photo shown) */
+.heroimg>video{background:var(--panel)}
+
+/* Hero shows only the video: hide any leftover photo/slices from old code or cached pages */
+.heroimg>img,.heroimg>.pizza-slices,.heroimg>.pizza-sparkle{display:none!important}
+
+/* ===== TOP Deals button (above "WELCOME TO SDF") - opens the deals popup ===== */
+.topdeals,.hero a[data-open-deals],.hero #openDeals{
+  position:relative;overflow:hidden;display:flex;width:fit-content;align-items:center;gap:8px;
+  background:var(--gold);color:#111;font-weight:700;font-size:14px;letter-spacing:.5px;
+  padding:12px 24px;border-radius:30px;margin-bottom:34px;
+  transition:background .25s ease,transform .25s ease;
+  animation:topdealsFloat 3s ease-in-out infinite,topdealsPulse 2s ease-out infinite;
+}
+.topdeals:hover,.hero a[data-open-deals]:hover,.hero #openDeals:hover{background:#ffc66d;transform:translateY(-2px) scale(1.04)}
+/* moving shine */
+.topdeals::before,.hero a[data-open-deals]::before,.hero #openDeals::before{
+  content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;
+  background:linear-gradient(120deg,transparent,#ffffffaa,transparent);
+  transform:skewX(-20deg);animation:topdealsShine 2.8s ease-in-out infinite;
+}
+@keyframes topdealsFloat{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@keyframes topdealsPulse{0%{box-shadow:0 0 0 0 #f2a83b99}70%,100%{box-shadow:0 0 0 16px #f2a83b00}}
+@keyframes topdealsShine{0%{left:-75%}60%,100%{left:130%}}
+@media(prefers-reduced-motion:reduce){
+  .topdeals,.hero a[data-open-deals],.hero #openDeals{animation:none}
+  .topdeals::before,.hero a[data-open-deals]::before,.hero #openDeals::before{animation:none;display:none}
+}
+
+/* ===== Stats icons (above each stat) ===== */
+.stats div::before{content:"";display:block;width:54px;height:54px;margin:0 auto 12px;border-radius:50%;background-color:#1c1608;background-repeat:no-repeat;background-position:center;background-size:26px;border:1px solid #49351d;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.stats div:nth-child(1)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f2a83b' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='12 2.5 14.9 8.6 21.5 9.4 16.7 14 17.9 20.6 12 17.4 6.1 20.6 7.3 14 2.5 9.4 9.1 8.6'/%3E%3C/svg%3E")}
+.stats div:nth-child(2)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f2a83b' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='13 2 4 14 11 14 10 22 20 9 13 9 13 2'/%3E%3C/svg%3E")}
+.stats div:nth-child(3)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f2a83b' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpolyline points='12 7 12 12 15.5 14'/%3E%3C/svg%3E")}
+.stats div:nth-child(4)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f2a83b' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z'/%3E%3Ccircle cx='9' cy='12' r='1'/%3E%3Ccircle cx='12' cy='12' r='1'/%3E%3Ccircle cx='15' cy='12' r='1'/%3E%3C/svg%3E")}
+.stats div:hover::before{transform:translateY(-4px) scale(1.1);border-color:var(--gold);box-shadow:0 8px 24px #f2a83b33}
+@media(prefers-reduced-motion:reduce){.stats div::before{transition:none}.stats div:hover::before{transform:none}}

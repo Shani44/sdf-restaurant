@@ -69,7 +69,7 @@ body.deals-lock{overflow:hidden}\
       '<div class="dbody"><h3>' + d.name + '</h3><p>' + d.desc + '</p>' +
       '<div class="prices"><span class="now">' + fmt(d.price) + '</span><span class="was">' + fmt(d.old) + '</span></div>' +
       '<div class="save">You save ' + fmt(d.old - d.price) + '</div>' +
-      '<button class="deal-order" data-name="' + d.name + '" data-price="' + d.price + '">Order on WhatsApp</button></div>' +
+      '<button class="deal-order" data-name="' + d.name + '" data-price="' + d.price + '">Order Now</button></div>' +
       '</article>';
   }).join('');
 

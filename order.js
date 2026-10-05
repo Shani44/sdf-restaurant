@@ -96,7 +96,7 @@ body.ord-lock{overflow:hidden}\
     '<div class="ord-field f-phone-w"><label>PHONE NUMBER</label><input class="f-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 0300 1234567"><em>Please enter a valid phone number</em></div>' +
     '<div class="ord-field f-addr-w"><label>DELIVERY ADDRESS</label><textarea class="f-addr" rows="2" autocomplete="street-address" placeholder="House no, street, area"></textarea><em>Please enter your delivery address</em></div>' +
     '<div class="ord-field"><label>NOTES (OPTIONAL)</label><input class="f-note" type="text" placeholder="e.g. less spicy, extra sauce"></div>' +
-    '<button type="button" class="ord-submit">✓ OK – Send Order on WhatsApp</button>' +
+    '<button type="button" class="ord-submit">Order Now</button>' +
     '<p class="ord-foot">Your full order opens in WhatsApp as one ready message. Just tap Send.</p>' +
     '</div>' +
     '</div>';
